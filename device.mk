@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc
 
+# Keylayouts
+PRODUCT_PACKAGES += \
+    gpio-keys.kl
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
