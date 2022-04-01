@@ -46,7 +46,11 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
+<<<<<<< HEAD
     $(LOCAL_PATH)/overlay-lineage
+=======
+    $(LOCAL_PATH)/overlay-custom
+>>>>>>> 73995cb (cebu: Adapt to PixelOS)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -72,6 +76,9 @@ $(foreach DEVICE_SKU, $(DEVICE_COMPASS_SKUS), \
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Signing
+$(call inherit-product, vendor/pixelos-priv/config/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
