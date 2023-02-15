@@ -1,13 +1,14 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2021-2023 The ArrowOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_capri.mk
+    $(LOCAL_DIR)/arrow_capri.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_capri-user \
-    lineage_capri-userdebug \
-    lineage_capri-eng
+    arrow_capri-user \
+    arrow_capri-userdebug \
+    arrow_capri-eng
+
