@@ -14,6 +14,9 @@ $(call inherit-product, device/motorola/capri/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_capri
 PRODUCT_DEVICE := capri
