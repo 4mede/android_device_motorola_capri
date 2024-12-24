@@ -25,5 +25,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 BUILD_FINGERPRINT := "motorola/capri_retail/capri:11/RRBS31.Q1-3-58-19/3c8d3:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=capri_retail \
-    PRIVATE_BUILD_DESC="capri_retail-user 11 RRBS31.Q1-3-58-19 3c8d3 release-keys"
