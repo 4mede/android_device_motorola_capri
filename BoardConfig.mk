@@ -15,6 +15,12 @@ TARGET_BOOTLOADER_BOARD_NAME := capri
 # Display
 TARGET_SCREEN_DENSITY := 280
 
+# Allow Duplicates
+BUILD_BROKEN_DUP_RULES := true
+
+#Allow Broekn ELF Files
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # HIDL
 ODM_MANIFEST_SKUS += b d dn f n
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
