@@ -61,5 +61,8 @@ BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 20
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
+# Broken
+BUILD_BROKEN_DUP_SYSPROP := true
+
 # Inherit from the proprietary version
 include vendor/motorola/capri/BoardConfigVendor.mk

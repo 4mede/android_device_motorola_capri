@@ -1,7 +1,4 @@
 #
-# SPDX-FileCopyrightText: 2022-2024 The LineageOS Project
->>>>>>> faac7f2 (capri: Switch to SPDX copyright & update dates)
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
