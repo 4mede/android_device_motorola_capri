@@ -16,7 +16,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # ArrowOS
 DEVICE_MAINTAINER := b
 # GMS build flags
-ARROW_GAPPS := false
+ARROW_GAPPS := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 720
