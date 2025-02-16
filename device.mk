@@ -75,5 +75,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
+# Signing
+$(call inherit-product, vendor/derp/signing/keys/common.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/capri/capri-vendor.mk)
