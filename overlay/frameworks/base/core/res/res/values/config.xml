@@ -212,11 +212,13 @@
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
         <item>43</item>
-    <!-- Device configuration indicating whether we should avoid using accelerated graphics
-         in certain places to reduce RAM footprint. Allows to tune down 
-         device's memory use without going to the point of causing applications to turn
-         off features. -->
-    <bool name="config_avoidGfxAccel">true</bool>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>0</item>
+        <item>43</item>
+    </integer-array>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -226,4 +228,11 @@
 
     <!-- Enable system navigation keys. -->
     <bool name="config_supportSystemNavigationKeys">true</bool>
+
+    <!-- Device configuration indicating whether we should avoid using accelerated graphics
+         in certain places to reduce RAM footprint. Allows to tune down 
+         device's memory use without going to the point of causing applications to turn
+         off features. -->
+    <bool name="config_avoidGfxAccel">true</bool>
+
 </resources>
