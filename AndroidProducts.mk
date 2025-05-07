@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_capri.mk
+    $(LOCAL_DIR)/yaap_capri.mk

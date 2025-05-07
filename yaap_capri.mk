@@ -18,7 +18,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_capri
+PRODUCT_NAME := yaap_capri
 PRODUCT_DEVICE := capri
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(10)
