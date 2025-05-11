@@ -61,9 +61,6 @@ PRODUCT_COPY_FILES += \
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 
-# Signing
-$(call inherit-product, vendor/pixelos-priv/config/common.mk)
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
