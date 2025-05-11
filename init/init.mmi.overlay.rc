@@ -1,5 +1,4 @@
 service audiopara-sh /vendor/bin/init.mmi.acdb.sh
-#    seclabel u:r:init_hw:s0
     class core
     user root
     oneshot

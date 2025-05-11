@@ -4,7 +4,7 @@
 #
 
 # Inherit from sm6225-common
-$(call inherit-product, device/motorola/sm6225-common/bengal.mk)
+$(call inherit-product, device/motorola/sm6225-common/common.mk)
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -25,13 +25,14 @@ TARGET_SCREEN_WIDTH := 720
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.mmi.acdb.sh \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.bengal
+    android.hardware.light-service.lineage
 
 # Moto Camera 3
 TARGET_MOTCAMERA3 := capri
@@ -56,7 +57,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 DEVICE_NFC_SKUS := b d f
-DEVICE_COMPASS_SKUS := b d dn f n
 
 PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
@@ -66,8 +66,7 @@ $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml)
 
 PRODUCT_COPY_FILES += \
-$(foreach DEVICE_SKU, $(DEVICE_COMPASS_SKUS), \
-    $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.sensor.compass.xml)
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.compass.xml
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
